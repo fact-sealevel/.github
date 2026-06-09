@@ -27,15 +27,15 @@ FACTS2 is an open-source software ecosystem that provides a unified framework fo
 FACTS2 is made up of a suite of independent, command-line applications (or, "modules") that can be executed directly using `uv` or using `docker run` to run inside its accompanying Docker container (recommended). Each module application is a GitHub repository and includes a README with instructions for accessing input data and running the module, and includes a working example. Links to the modules are listed in the [Module details](#module-details) section below.
 
 Typically, researchers link these modules together in specific ways to estimate distributions of sea level change. The linked modules, known as a FACTS "experiment", follow a set of steps that are run in sequence: 
-  - **1. climate step:** produce global mean surface temperature (GMST) change and other relevant climate variables to drive sea level components. Available modules: see [Module details → Climate step](#climate-step-1).
+  - **1. climate step:** produce global mean surface temperature (GMST) change and other relevant climate variables to drive sea level components. Available modules: see [Module details → Climate step](#climate-step).
 
-  - **2. sea-level step:** produce sea-level change contributions. Multiple module choices for the same process let you explore structural uncertainty (different scientific models for the same physics). Available modules: see [Module details → Sea-level step](#sea-level-step-1). Modules are run in parallel if compute resources allow and represent the following components:
+  - **2. sea-level step:** produce sea-level change contributions. Multiple module choices for the same process let you explore structural uncertainty (different scientific models for the same physics). Available modules: see [Module details → Sea-level step](#sea-level-step). Modules are run in parallel if compute resources allow and represent the following components:
     - i. vertical land motion
     - ii. land ice (ice sheets and glaciers)
     - iii. thermal expansion and ocean dynamics
     - iv. land water storage
-  - **3. totaling step:** produce total global and relative sea level change by summing outputs of step 2. Structural uncertainty can be explored by summing different component representations in separate "workflows". Available modules: see [Module details → Totaling step](#totaling-step-1).
-  - **4. extreme sea-level step:** compute return levels and other extreme sea-level statistics from totaled sea-level projections and historical tide-gauge data. Available modules: see [Module details → Extreme sea-level step](#extreme-sea-level-step-1).
+  - **3. totaling step:** produce total global and relative sea level change by summing outputs of step 2. Structural uncertainty can be explored by summing different component representations in separate "workflows". Available modules: see [Module details → Totaling step](#totaling-step).
+  - **4. extreme sea-level step:** compute return levels and other extreme sea-level statistics from totaled sea-level projections and historical tide-gauge data. Available modules: see [Module details → Extreme sea-level step](#extreme-sea-level-step).
 
 
 ```mermaid
@@ -90,7 +90,10 @@ Questions or issues? Open an issue in the relevant module repository or in [`fac
 
 ## Module details
 
-Most experiment steps have multiple module options from which to choose. Each links to the module's GitHub repository and README.
+<details>
+<summary>Most experiment steps have multiple module options from which to choose. Click to expand the full module list.</summary>
+
+Each links to the module's GitHub repository and README.
 
 ### Climate step
 - [`fair-temperature`](https://github.com/fact-sealevel/fair-temperature)
@@ -136,6 +139,11 @@ Most experiment steps have multiple module options from which to choose. Each li
 - [`facts-experiment-builder`](https://github.com/fact-sealevel/facts-experiment-builder)
 - [`facts-module-registry`](https://github.com/fact-sealevel/facts-module-registry)
 - [`facts-experiment-catalog`](https://github.com/fact-sealevel/facts-experiment-catalog)
+
+</details>
+
+## Contact us
+- Join our Slack workspace: [fact-sealevel.slack.com](fact-sealevel.slack.com)
 
 ## References
 
