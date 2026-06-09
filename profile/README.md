@@ -20,6 +20,7 @@ FACTS2 is an open-source software ecosystem that provides a unified framework fo
   - [Totaling step](#totaling-step)
   - [Extreme sea-level step](#extreme-sea-level-step)
   - [Framework](#framework)
+- [Contact us](#contact-us)
 - [References](#references)
 
 ## Overview
