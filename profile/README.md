@@ -31,14 +31,14 @@ FACTS2 is an open-source software ecosystem that provides a unified framework fo
 FACTS2 is made up of a suite of independent, command-line applications (or, "modules") that can be executed directly using `uv` or using `docker run` to run inside its accompanying Docker container (recommended). Each module application is a GitHub repository and includes a README with instructions for accessing input data and running the module, and includes a working example. Links to the modules are listed in the [Module details](#module-details) section below.
 
 Typically, researchers link these modules together in specific ways to estimate distributions of sea level change. The linked modules, known as a FACTS "experiment", follow a set of steps that are run in sequence: 
-  **1. climate step:** produce global mean surface temperature (GMST) change and other relevant climate variables to drive sea level components
-  **2. sea-level step:** produce sea-level change contributions from modules (run in parallel) representing:
+  - **1. climate step:** produce global mean surface temperature (GMST) change and other relevant climate variables to drive sea level components
+  - **2. sea-level step:** produce sea-level change contributions from modules (run in parallel) representing:
     - i. vertical land motion
     - ii. land ice (ice sheets and glaciers)
     - iii. thermal expansion and ocean dynamics
     - iv. land water storage
-  **3. totaling step:** produce total global and relative sea level change by summing outputs of step 2. Structural uncertainty can be explored by summing different components in separate "workflows"
-  **4. extreme sea-level step:** compute return levels and other extreme sea-level statistics from totaled sea-level projections and historical tide-gauge data
+  - **3. totaling step:** produce total global and relative sea level change by summing outputs of step 2. Structural uncertainty can be explored by summing different components in separate "workflows"
+  - **4. extreme sea-level step:** compute return levels and other extreme sea-level statistics from totaled sea-level projections and historical tide-gauge data
 
 ```mermaid
 flowchart LR
